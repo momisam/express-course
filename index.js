@@ -3,13 +3,17 @@
 const express = require('express');
 const app = express();
 
-app.use('/user', (req, res) => {
+app.use('/contact', (req, res) => {
     console.log('first middleware');
     res.send('My contact is contact@mosessam.com');
 })
+app.use('/users', (req, res) => {
+    console.log('second middleware');
+    res.send('Users landing page');
+})
 
 app.use('/', (req, res) => {
-    console.log('second middleware');
+    console.log('third middleware');
     res.send('My express course Homepage');
 })
 

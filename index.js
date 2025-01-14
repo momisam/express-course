@@ -3,7 +3,10 @@
 const express = require('express');
 const app = express();
 
-
+app.use('/user', (req, res) => {
+    console.log('first middleware');
+    res.send('My contact is contact@mosessam.com');
+})
 
 
 

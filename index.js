@@ -8,6 +8,10 @@ app.use('/user', (req, res) => {
     res.send('My contact is contact@mosessam.com');
 })
 
+app.use('/', (req, res) => {
+    console.log('second middleware');
+    res.send('My nexpress course Homepage');
+})
 
 
 app.listen(3000, () => {

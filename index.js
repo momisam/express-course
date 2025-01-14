@@ -10,7 +10,7 @@ app.use('/user', (req, res) => {
 
 app.use('/', (req, res) => {
     console.log('second middleware');
-    res.send('My nexpress course Homepage');
+    res.send('My express course Homepage');
 })
 
 
